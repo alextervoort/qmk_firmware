@@ -25,11 +25,11 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define DEVICE_VER      0x0001
 #define MANUFACTURER    You
 #define PRODUCT         at75
-#define DESCRIPTION     A custom keyboard
+#define DESCRIPTION     Ortholinear 15x5 handwired with pro micro controller
 
 /* key matrix size */
-#define MATRIX_ROWS 2
-#define MATRIX_COLS 3
+#define MATRIX_ROWS 10
+#define MATRIX_COLS 8
 
 /*
  * Keyboard Matrix Assignments
