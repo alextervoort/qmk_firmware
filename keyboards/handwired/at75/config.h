@@ -41,8 +41,18 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *                  ROW2COL = ROW = Anode (+), COL = Cathode (-, marked on diode)
  *
 */
-#define MATRIX_ROW_PINS { D0, D5 }
-#define MATRIX_COL_PINS { F1, F0, B0 }
+
+// ROWS: Top to bottom, COLS: Left to right
+/* Row pin configuration
+* row: 0  1  2  3  4  5  6  7  8  9
+* pin: D3 D2 D1 D0 D4 C6 D7 E6 B4 B5
+*/
+#define MATRIX_ROW_PINS { D3, D2, D1, D0, D4, C6, D7, E6, B4, B5 }  //10 pins at left side of board, start counting at usb connector
+/* Column pin configuration
+ * col: 0  1  2  3  4  5  6  7
+ * pin: F4 F5 F6 F7 B1 B3 B2 B6
+ */
+#define MATRIX_COL_PINS { F4, F5, F6, F7, B1, B3, B2, B6 } //8 pins at right side of board, start counting at usb connector
 #define UNUSED_PINS
 
 /* COL2ROW, ROW2COL*/
