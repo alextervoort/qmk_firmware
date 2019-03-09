@@ -23,8 +23,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define VENDOR_ID       0xFEED
 #define PRODUCT_ID      0x0000
 #define DEVICE_VER      0x0001
-#define MANUFACTURER    You
-#define PRODUCT         at75
+#define MANUFACTURER    AlexT
+#define PRODUCT         AT75
 #define DESCRIPTION     Ortholinear 15x5 handwired with pro micro controller
 
 /* key matrix size */
