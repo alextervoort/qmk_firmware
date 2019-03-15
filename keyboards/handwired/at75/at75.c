@@ -37,7 +37,18 @@ bool process_record_kb(uint16_t keycode, keyrecord_t *record) {
 }
 
 void led_set_kb(uint8_t usb_led) {
-	// put your keyboard LED indicator (ex: Caps Lock LED) toggling code here
+  DDRB |= (1 << 0); //set Rx LED pin as output for numlock
+  DDRD |= (1 << 5); //set Tx LED pin as output for capslock
 
-	led_set_user(usb_led);
+  if (usb_led & (1 << USB_LED_NUM_LOCK)) {
+    PORTB &= ~(1 << 0);
+  } else {
+    PORTB |= (1 << 0);
+  }
+
+  if (usb_led & (1 << USB_LED_CAPS_LOCK)) {
+    PORTD &= ~(1 << 5);
+  } else {
+    PORTD |= (1 << 5);
+  }
 }
