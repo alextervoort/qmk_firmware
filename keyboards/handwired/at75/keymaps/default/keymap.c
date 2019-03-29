@@ -110,8 +110,20 @@ void matrix_init_user(void) {
 }
 
 void matrix_scan_user(void) {
+  uint8_t layer = biton32(layer_state);
 
-}
+  DDRB |= (1 << 0); //set Rx LED pin as output for layer_state    
+    PORTB |= (1 << 0);// turn off led
+
+  switch (layer) {
+    case _QW:  //Layer LED off
+      PORTB |= (1 << 0);
+      break;
+    case _FN: //Layer LED on
+      PORTB &= ~(1 << 0); 
+      break;
+  }
+};
 
 void led_set_user(uint8_t usb_led) {
 
