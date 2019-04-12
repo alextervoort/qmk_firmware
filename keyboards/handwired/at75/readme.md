@@ -1,11 +1,13 @@
 # AT75 
 
-[AT75](https://imgur.com/K8Vqxkq.jpg)
+![Imgur](https://i.imgur.com/SBjwVwIm.jpg)
 
 Firmware for a handwired 5x15 ortholinear keyboard based on a XD75 plate with a cheap pro micro as controller.
 
 MCU is a pro micro, because of the limitation in IO pins some creativity had to be used setting up the matrix.
-The keyboard matrix is actually logically 10 rows and 8 columns with 2 rows physically in 1 row, odd and even positions in seperate logical rows. [Red and Blue rows](https://i.imgur.com/ZfCS5U7.jpg)
+The keyboard matrix is actually logically 10 rows and 8 columns with 2 rows physically in 1 row, odd and even positions in seperate logical rows. 
+
+![Imgur](https://i.imgur.com/owW5ATPm.jpg)
 
 Keyboard Maintainer: https://github.com/alextervoort  
 Hardware Supported: 32u4 pro micro  (clone)
