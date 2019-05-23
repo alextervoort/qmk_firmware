@@ -1,5 +1,6 @@
 /*
-Copyright 2019 Alex Tervoort, based on original from Jeremy Herve <jeremy@jeremy.hu>
+Copyright 2019 Alex Tervoort, based on original from [Mattia Dal Ben](https://github.com/mattdibi/redox-keyboard).
+and [jeherve](https://github.com/qmk/qmk_firmware/tree/master/keyboards/redox/keymaps/jeherve).
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
