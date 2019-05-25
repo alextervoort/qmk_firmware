@@ -64,9 +64,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define SOFT_SERIAL_PIN D0 // or D1, D2, D3, E6
 
 // qmk bootloader defines
-#define QMK_ESC_OUTPUT F4 // ESC COL
-#define QMK_ESC_INPUT D3 // ESC ROW
-#define QMK_LED B0 //Rx led
+//#define QMK_ESC_OUTPUT F4 // ESC COL
+//#define QMK_ESC_INPUT D3 // ESC ROW
+//#define QMK_LED B0 //Rx led
 //#define QMK_SPEAKER // not used
 
 
