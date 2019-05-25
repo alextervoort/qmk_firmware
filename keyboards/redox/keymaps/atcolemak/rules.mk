@@ -1,4 +1,4 @@
 RGBLIGHT_ENABLE = yes
 //UNICODE_ENABLE = yes
 AUDIO_ENABLE = yes
-
+BOOTLOADER = qmk-dfu

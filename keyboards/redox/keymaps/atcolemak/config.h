@@ -18,8 +18,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #pragma once
 
+//QMK-DFU parameters
+#define QMK_ESC_OUTPUT D4 // ESC COL
+#define QMK_ESC_INPUT F5 // ESC ROW
+#define QMK_LED B0 // Rx led
+#define QMK_SPEAKER C6 
+
 /* Change the default tapping toggle value (normally 5) */
-#define TAPPING_TOGGLE 2
+//#define TAPPING_TOGGLE 2
 
 /* Use I2C or Serial, not both */
 #define USE_SERIAL
