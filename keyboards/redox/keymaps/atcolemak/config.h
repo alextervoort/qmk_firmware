@@ -19,8 +19,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #pragma once
 
 //QMK-DFU parameters
-#define QMK_ESC_OUTPUT D4 // ESC COL
-#define QMK_ESC_INPUT F5 // ESC ROW
+#define QMK_ESC_OUTPUT F5 // ESC COL
+#define QMK_ESC_INPUT D4 // ESC ROW
 #define QMK_LED B0 // Rx led
 #define QMK_SPEAKER C6 
 

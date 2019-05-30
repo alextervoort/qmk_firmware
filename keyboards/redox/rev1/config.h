@@ -23,7 +23,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define VENDOR_ID       0xFEED
 #define PRODUCT_ID      0x0000
 #define DEVICE_VER      0x0100
-#define MANUFACTURER    Falbatech
+#define MANUFACTURER    Falbatech modified by Alex Tervoort 
 #define PRODUCT         The Redox Keyboard
 #define DESCRIPTION     Split Ergodox-like 5x7 custom keyboard
 
