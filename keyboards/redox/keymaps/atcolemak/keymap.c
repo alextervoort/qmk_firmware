@@ -86,7 +86,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   )
 };
 
-
+/*
 // Change LED colors depending on the layer.
 uint32_t layer_state_set_user(uint32_t state) {
 	switch (biton32(state)) {
@@ -108,3 +108,4 @@ uint32_t layer_state_set_user(uint32_t state) {
 	}
 	return state;
 };
+*/
