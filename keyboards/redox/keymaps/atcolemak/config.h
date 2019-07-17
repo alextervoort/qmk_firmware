@@ -35,7 +35,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define SPLIT_HAND_PIN F4
 //#define MASTER_LEFT
 //#define MASTER_RIGHT
-//#define EE_HANDSxx`
+//#define EE_HANDS
 
 /* ws2812 RGB LED */
 #define RGB_DI_PIN D3
