@@ -61,12 +61,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 /*
  * Split Keyboard specific options, make sure you have 'SPLIT_KEYBOARD = yes' in your rules.mk, and define SOFT_SERIAL_PIN.
  */
-#define SOFT_SERIAL_PIN D0 // or D1, D2, D3, E6
+//#define SOFT_SERIAL_PIN D0 // or D1, D2, D3, E6
 
 // qmk bootloader defines
-//#define QMK_ESC_OUTPUT F4 // ESC COL
-//#define QMK_ESC_INPUT D3 // ESC ROW
-//#define QMK_LED B0 //Rx led
+#define QMK_ESC_OUTPUT F4 // ESC COL
+#define QMK_ESC_INPUT D3 // ESC ROW
+#define QMK_LED B0 //Rx led
 //#define QMK_SPEAKER // not used
 
 
