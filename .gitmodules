@@ -1,11 +1,7 @@
 [submodule "lib/chibios"]
 	path = lib/chibios
-<<<<<<< HEAD
-	url = https://github.com/qmk/ChibiOS.git
-=======
 	url = https://github.com/qmk/ChibiOS
 	branch = master
->>>>>>> upstream/master
 [submodule "lib/chibios-contrib"]
 	path = lib/chibios-contrib
 	url = https://github.com/qmk/ChibiOS-Contrib
