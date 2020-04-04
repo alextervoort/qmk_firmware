@@ -24,12 +24,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define PRODUCT_ID 0x0000
 #define DEVICE_VER 0x0001
 #define MANUFACTURER Alex Tervoort
-#define PRODUCT aso75
-#define DESCRIPTION A custom keyboard
+#define PRODUCT The ASO75 keyboard
+#define DESCRIPTION An Asymetric Split Ortho keyboard, 8x5 and 7x5 halves, 75 keys.
 
 /* key matrix size */
-#define MATRIX_ROWS 2
-#define MATRIX_COLS 3
+#define MATRIX_ROWS 5
+#define MATRIX_COLS 15
 
 /*
  * Keyboard Matrix Assignments
@@ -41,8 +41,11 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *                  ROW2COL = ROW = Anode (+), COL = Cathode (-, marked on diode)
  *
  */
-#define MATRIX_ROW_PINS { D0, D5 }
-#define MATRIX_COL_PINS { F1, F0, B0 }
+#define MATRIX_ROW_PINS { B5, B4, E6, D7, D4 }
+#define MATRIX_COL_PINS { B6, B2, B3, B1, F7, F6, F5, F4 }
+/*Left and right halves are NOT wired identical, just to make soldering easies in the small case */
+#define MATRIX_ROW_PINS_RIGHT { B5, B4, E6, D7, D4 }
+#define MATRIX_COL_PINS__RIGHT { B6, B2, B3, B1, F7, F6, F5, F4 }
 #define UNUSED_PINS
 
 /* COL2ROW, ROW2COL*/
@@ -50,8 +53,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 /*
  * Split Keyboard specific options, make sure you have 'SPLIT_KEYBOARD = yes' in your rules.mk, and define SOFT_SERIAL_PIN.
- */
+ ***Using i2c, not serial***
 #define SOFT_SERIAL_PIN D0  // or D1, D2, D3, E6
+*/
+#define USE_I2C
 
 // #define BACKLIGHT_PIN B7
 // #define BACKLIGHT_BREATHING
