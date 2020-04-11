@@ -21,7 +21,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 //QMK-DFU bootloader parameters
 #define QMK_ESC_OUTPUT B6 // top left button COL
-#define QMK_ESC_INPUT D4  // tip left button ROW
+#define QMK_ESC_INPUT D4  // top left button ROW
 #define QMK_LED B0        // Rx led
 #define QMK_SPEAKER C6    // Speaker will click while in bootloader
 
