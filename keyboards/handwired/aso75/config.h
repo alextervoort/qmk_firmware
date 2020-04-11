@@ -45,8 +45,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define MATRIX_ROW_PINS { B5, B4, E6, D7, D4 }
 #define MATRIX_COL_PINS { B6, B2, B3, B1, F7, F6, F5, F4 }
 /*Left and right halves are NOT wired identical, just to make soldering easies in the small case */
-//#define MATRIX_ROW_PINS_RIGHT { B5, B4, E6, D7, D4 }
-//#define MATRIX_COL_PINS_RIGHT { B6, B2, B3, B1, F7, F6, F5 }
+#define MATRIX_ROW_PINS_RIGHT { B5, B4, E6, D7, D4 }
+#define MATRIX_COL_PINS_RIGHT { B6, B2, B3, B1, F7, F6, F5 }
 #define UNUSED_PINS
 
 /* COL2ROW, ROW2COL*/
@@ -58,6 +58,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define SOFT_SERIAL_PIN D0  // or D1, D2, D3, E6
 */
 #define USE_I2C
+
+/* Select hand configuration */
+#define SPLIT_HAND_PIN D3
 
 // #define BACKLIGHT_PIN B7
 // #define BACKLIGHT_BREATHING
