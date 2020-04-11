@@ -19,6 +19,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #include "config_common.h"
 
+//QMK-DFU bootloader parameters
+#define QMK_ESC_OUTPUT B6 // top left button COL
+#define QMK_ESC_INPUT D4  // tip left button ROW
+#define QMK_LED B0        // Rx led
+#define QMK_SPEAKER C6    // Speaker will click while in bootloader
+
 /* USB Device descriptor parameter */
 #define VENDOR_ID 0xFEED
 #define PRODUCT_ID 0x0000
