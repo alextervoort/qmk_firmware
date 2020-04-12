@@ -27,8 +27,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 /* USB Device descriptor parameter */
 #define VENDOR_ID 0xFEED
-#define PRODUCT_ID 0x0000
-#define DEVICE_VER 0x0001
+#define PRODUCT_ID 0x0010
+#define DEVICE_VER 0x000A
 #define MANUFACTURER Alex Tervoort
 #define PRODUCT The ASO75 keyboard
 #define DESCRIPTION An Asymetric Split Ortho keyboard, 8x5 and 7x5 halves, 75 keys.
