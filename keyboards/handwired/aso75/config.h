@@ -30,7 +30,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define PRODUCT_ID 0x0010
 #define DEVICE_VER 0x000A
 #define MANUFACTURER Alex Tervoort
-#define PRODUCT ASO75
+#define PRODUCT The ASO75 Keyboard
 #define DESCRIPTION An Asymetric Split Ortho keyboard, 8x5 and 7x5 halves, 75 keys.
 
 /* key matrix size */
@@ -51,7 +51,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define MATRIX_ROW_PINS { B5, B4, E6, D7, D4 }
 #define MATRIX_COL_PINS { B6, B2, B3, B1, F7, F6, F5, F4 }
 /*Left and right halves are NOT wired identical, just to make soldering easies in the small case */
-#define MATRIX_ROW_PINS_RIGHT { B5, B4, E6, D7, D4 }
+#define MATRIX_ROW_PINS_RIGHT { D4, B5, B4, E6, D7 }
 #define MATRIX_COL_PINS_RIGHT { B6, B2, B3, B1, F7, F6, F5 }
 #define UNUSED_PINS
 
