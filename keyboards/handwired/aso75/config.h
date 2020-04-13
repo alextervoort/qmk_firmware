@@ -30,7 +30,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define PRODUCT_ID 0x0010
 #define DEVICE_VER 0x000A
 #define MANUFACTURER Alex Tervoort
-#define PRODUCT The ASO75 keyboard
+#define PRODUCT ASO75
 #define DESCRIPTION An Asymetric Split Ortho keyboard, 8x5 and 7x5 halves, 75 keys.
 
 /* key matrix size */
