@@ -18,8 +18,8 @@
 // Defines names for use in layer keycodes and the keymap
 enum layer_names {
     _CM = 0,
-  	_QW,	 //Querty layer
-    _FN
+  	_QW = 1,	 //Querty layer
+    _FN = 2
 };
 
 // Defines the keycodes used by our macros in process_record_user
