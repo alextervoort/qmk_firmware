@@ -48,7 +48,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
 /* Left half has 8x5 keys, Right 7x5 */
-#define MATRIX_ROW_PINS { B5, B4, E6, D7, D4 }
+#define MATRIX_ROW_PINS { D4, D7, B5, B4, E6 }
 #define MATRIX_COL_PINS { B6, B2, B3, B1, F7, F6, F5, F4 }
 /*Left and right halves are NOT wired identical, just to make soldering easies in the small case */
 #define MATRIX_ROW_PINS_RIGHT { D4, B5, B4, E6, D7 }
