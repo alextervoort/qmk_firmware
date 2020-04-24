@@ -17,9 +17,9 @@
 
 // Defines names for use in layer keycodes and the keymap
 enum layer_names {
-    _CM = 0,
-  	_QW = 1,	 //Querty layer
-    _FN = 2
+    _CM = 0,   //Colemak layer
+  	_QW = 1,	 //Qwerty layer
+    _FN = 2    //Function layer
 };
 
 // Defines the keycodes used by our macros in process_record_user
@@ -33,23 +33,23 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [_CM] = LAYOUT( /* Colemak */
 /* Colemak
  * .-----------------------------------------------------------------------.  .---------------------------------------------------------------.
- * | GESC   | 1      | 2      | 3      | 4      | 5      | -      | `      |  | =      | 6      | 7      | 8      | 9      | 0      | DEL    |
+ * | GESC   | 1      | 2      | 3      | 4      | 5      | -      | `      |  |  =     | 6      | 7      | 8      | 9      | 0      | DEL    |
  * |--------+--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+-----------------|
- * | TAB    | Q      | W      | F      | P      | G      | [      | \      |  | ]      | J      | L      | U      | Y      | ;      | '      |
+ * | TAB    | Q      | W      | F      | P      | G      | [      | \      |  |  PG UP | J      | L      | U      | Y      | ;      | \      |
  * |--------+--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+-----------------+--------|
- * | BACKSP | A      | R      | S      | T      | D      | HOME   | DEL    |  | PG UP  | H      | N      | E      | I      | O      | ENTER  |
+ * | BACKSP | A      | R      | S      | T      | D      | HOME   | DEL    |  |  PG DN | H      | N      | E      | I      | O      | '      |
  * |--------+--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------------------------+--------|
- * | SFTCAP | Z      | X      | C      | V      | B      | END    | UP     |  | PG DN  | K      | M      | ,      | .      | /      | RSHIFT |
+ * | SFTCAP | Z      | X      | C      | V      | B      | END    | UP     |  |  RIGHT | K      | M      | ,      | .      | /      | RSHIFT |
  * |--------+--------+--------+--------+--------+-----------------+--------|  |--------+--------+--------+-----------------+--------+--------|
- * | LCTRL  | LGUI   | LALT   | FN     | SPACE  | SPACE  | LEFT   | DOWN   |  | RIGHT  | SPACE  | SPACE  | FN     | RALT   | RGUI   | RCTRL  |
+ * | LCTRL  | LGUI   | LALT   | FN     | SPACE  | SPACE  | LEFT   |   |       |  DOWN  | SPACE  | SPACE  | FN     | RALT   | RGUI   | RCTRL  |
  * '-----------------------------------------------------------------------'  '--------------------------------------------------------------'
  */
 
    KC_GESC, KC_1,    KC_2,    KC_3,    KC_4,    KC_5,    KC_MINS, KC_GRV,  KC_EQL,  KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    KC_DEL,  \
-   KC_TAB,  KC_Q,    KC_W,    KC_F,    KC_P,    KC_G,    KC_LBRC, KC_BSLS, KC_RBRC, KC_J,    KC_L,    KC_U,    KC_Y,    KC_SCLN, KC_QUOT,  \
-   KC_BSPC, KC_A,    KC_R,    KC_S,    KC_T,    KC_D,    KC_HOME, KC_DEL,  KC_PGUP, KC_H,    KC_N,    KC_E,    KC_I,    KC_O,    KC_ENT,   \
-   KC_LSFT, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_END,  KC_UP,   KC_PGDN, KC_K,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, KC_RSFT,  \
-   KC_LCTL, KC_LGUI, KC_LALT, LT(_FN, KC_SPC),  KC_SPC,  KC_SPC,  KC_LEFT, KC_DOWN, KC_RGHT, KC_SPC,  KC_SPC,  LT(_FN, KC_SPC),  KC_RALT, KC_RGUI, KC_RCTL   \
+   KC_TAB,  KC_Q,    KC_W,    KC_F,    KC_P,    KC_G,    KC_LBRC, KC_BSLS, KC_PGUP, KC_J,    KC_L,    KC_U,    KC_Y,    KC_SCLN, KC_BSLS, \
+   KC_BSPC, KC_A,    KC_R,    KC_S,    KC_T,    KC_D,    KC_HOME, KC_DEL,  KC_PGDN, KC_H,    KC_N,    KC_E,    KC_I,    KC_O,    KC_QUOT, \
+   KC_LSFT, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_END,  KC_UP,   KC_RGHT, KC_K,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, KC_RSFT, \
+   KC_F5,   KC_LCTL, KC_LGUI, KC_LALT, LT(_FN, KC_SPC),  KC_SPC,  KC_SPC,  KC_LEFT, KC_DOWN, KC_ENT,  KC_ENT,  LT(_FN, KC_ENT),  KC_RALT, KC_RGUI, KC_RCTL \
   ),
 
   [_QW] = LAYOUT( /* QWERTY keymap */
