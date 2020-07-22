@@ -33,23 +33,23 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [_CM] = LAYOUT( /* Colemak */
 /* Colemak
  * .-----------------------------------------------------------------------.  .--------------------------------------------------------------.
- * | F1     | GESC   | 1      | 2      | 3      | 4      | 5      | -      |  |  =     | 6      | 7      | 8      | 9      | 0      | DEL    |
+ * | GESC   | 1      | 2      | 3      | 4      | 5      | -      |   F1   |  |  =     | 6      | 7      | 8      | 9      | 0      | DEL    |
  * |--------+--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+-----------------|
- * | F2     | TAB    | Q      | W      | F      | P      | G      | HOME   |  |  PG UP | J      | L      | U      | Y      | ;      | \      |
+ * | TAB    | Q      | W      | F      | P      | G      | HOME   |   F2   |  |  PG UP | J      | L      | U      | Y      | ;      | \      |
  * |--------+--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+-----------------+--------|
- * | F3     | BACKSP | A      | R      | S      | T      | D      | END    |  |  PG DN | H      | N      | E      | I      | O      | '      |
+ * | BACKSP | A      | R      | S      | T      | D      | END    |   F3   |  |  PG DN | H      | N      | E      | I      | O      | '      |
  * |--------+--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------------------------+--------|
- * | F4     | SFTCAP | Z      | X      | C      | V      | B      | UP     |  |  RIGHT | K      | M      | ,      | .      | /      | RSHIFT |
+ * | SFTCAP | Z      | X      | C      | V      | B      | UP     |   F4   |  |  RIGHT | K      | M      | ,      | .      | /      | RSHIFT |
  * |--------+--------+--------+--------+--------+-----------------+--------|  |--------+--------+--------+-----------------+--------+--------|
- * | F5     | LCTRL  | LGUI   | LALT   | FN     | SPACE  | SPACE  | LEFT   |  |  DOWN  | ENTER  | ENTER  | FN     | RALT   | RGUI   | RCTRL  |
+ * | LCTRL  | LGUI   | LALT   | FN     | SPACE  | SPACE  | LEFT   |   F5   |  |  DOWN  | ENTER  | ENTER  | FN     | RALT   | RGUI   | RCTRL  |
  * '-----------------------------------------------------------------------'  '--------------------------------------------------------------'
  */
 
-   KC_F1,   KC_GESC, KC_1,    KC_2,    KC_3,    KC_4,    KC_5,    KC_MINS, KC_EQL,  KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    KC_DEL,  \
-   KC_F2,   KC_TAB,  KC_Q,    KC_W,    KC_F,    KC_P,    KC_G,    KC_HOME, KC_PGUP, KC_J,    KC_L,    KC_U,    KC_Y,    KC_SCLN, KC_BSLS, \
-   KC_F3,   KC_BSPC, KC_A,    KC_R,    KC_S,    KC_T,    KC_D,    KC_END,  KC_PGDN, KC_H,    KC_N,    KC_E,    KC_I,    KC_O,    KC_QUOT, \
-   KC_F4,   KC_LSFT, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_UP,   KC_RGHT, KC_K,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, KC_RSFT, \
-   KC_F5,   KC_LCTL, KC_LGUI, KC_LALT, LT(_FN, KC_SPC),  KC_SPC,  KC_SPC,  KC_LEFT, KC_DOWN, KC_ENT,  KC_ENT,  LT(_FN, KC_ENT),  KC_RALT, KC_RGUI, KC_RCTL \
+   KC_GESC, KC_1,    KC_2,    KC_3,    KC_4,    KC_5,    KC_MINS, KC_F1,   KC_EQL,  KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    KC_DEL,  \
+   KC_TAB,  KC_Q,    KC_W,    KC_F,    KC_P,    KC_G,    KC_HOME, KC_F2,   KC_PGUP, KC_J,    KC_L,    KC_U,    KC_Y,    KC_SCLN, KC_BSLS, \
+   KC_BSPC, KC_A,    KC_R,    KC_S,    KC_T,    KC_D,    KC_END,  KC_F3,   KC_PGDN, KC_H,    KC_N,    KC_E,    KC_I,    KC_O,    KC_QUOT, \
+   KC_LSFT, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_UP,   KC_F4,   KC_RGHT, KC_K,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, KC_RSFT, \
+   KC_LCTL, KC_LGUI, KC_LALT, LT(_FN, KC_SPC),  KC_SPC,  KC_SPC,  KC_LEFT, KC_F5,   KC_DOWN, KC_ENT,  KC_ENT,  LT(_FN, KC_ENT),  KC_RALT, KC_RGUI, KC_RCTL \
   ),
 
   [_QW] = LAYOUT( /* QWERTY keymap */
